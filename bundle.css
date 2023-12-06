@@ -127,6 +127,7 @@ textarea:not([rows]) {
 
   --white: #fcfcf8;
   --white-transparent: #fcfcf8b5;
+  --black: #192121;
 
   --green-light: #c1decc;
   --green-dark: #546e6f;
@@ -141,6 +142,7 @@ textarea:not([rows]) {
   --header-bg: var(--green-dark);
   --font-color-light: var(--white);
   --font-color-light-transparent: var(--white-transparent);
+  --font-color-dark: var(--black);
 
   --font-family-headings: "Montaga", serif;
   --font-family-body:  "Jost", sans-serif;
@@ -156,6 +158,7 @@ body {
   flex-direction: column;
   align-items: stretch;
 
+  color: var(--font-color-dark);
   font-size: var(--step-0);
   font-family: var(--font-family-body);
 
