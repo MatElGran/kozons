@@ -178,7 +178,7 @@ a.current {
   text-decoration-color: var(--link-color-current);
 }
 
-header, footer {
+#main-header, #main-footer {
   font-family: var(--font-family-headings);
   padding: calc(var(--main-padding) / 1.5) var(--main-padding);
   color: var(--font-color-light);
@@ -219,7 +219,7 @@ header, footer {
   --switcher-threshold: 25rem;
 }
 
-footer {
+#main-footer {
   display: flex;
   justify-content: center;
 }
