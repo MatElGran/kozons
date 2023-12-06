@@ -95,14 +95,12 @@ textarea:not([rows]) {
 * Vars
 **********************************************************/
 :root {
-  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,2520,24,1.25,5,1,1280&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --step--1: clamp(0.9375rem, 0.8993rem + 0.1909vw, 1.2rem);
-  --step-0: clamp(1.125rem, 1.0705rem + 0.2727vw, 1.5rem);
-  --step-1: clamp(1.35rem, 1.2736rem + 0.3818vw, 1.875rem);
-  --step-2: clamp(1.62rem, 1.5147rem + 0.5264vw, 2.3438rem);
-  --step-3: clamp(1.9438rem, 1.8003rem + 0.7173vw, 2.93rem);
-  --step-4: clamp(2.3325rem, 2.1391rem + 0.9668vw, 3.6619rem);
-  --step-5: clamp(2.7994rem, 2.5407rem + 1.2932vw, 4.5775rem);
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,2520,18,1.2,4,0,1280&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step-0: clamp(1rem, 0.9818rem + 0.0909vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1782rem + 0.1091vw, 1.35rem);
+  --step-2: clamp(1.44rem, 1.4138rem + 0.1309vw, 1.62rem);
+  --step-3: clamp(1.7281rem, 1.6968rem + 0.1568vw, 1.9438rem);
+  --step-4: clamp(2.0738rem, 2.0361rem + 0.1882vw, 2.3325rem);
 
   /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,2520,24,1.25,5,1,1280&s=0.75|0.5|0.25,1.5|2|3|4|6,&g=s,l,xl,12 */
   --space-3xs: clamp(0.3125rem, 0.3034rem + 0.0455vw, 0.375rem);
@@ -128,6 +126,7 @@ textarea:not([rows]) {
   --white: #fcfcf8;
   --white-transparent: #fcfcf8b5;
   --black: #192121;
+  --black-transparent: #192121c5;
 
   --green-light: #c1decc;
   --green-dark: #546e6f;
@@ -185,6 +184,7 @@ a.current {
 
 h1 {
   font-size: var(--step-4);
+  font-family: var(--font-family-headings);
 }
 
 #main-header, #main-footer {
@@ -231,7 +231,6 @@ h1 {
 #main-footer {
   display: flex;
   justify-content: center;
-  font-size: var(--step--1);
   color: var(--font-color-light-transparent);
 }
 
@@ -252,6 +251,10 @@ main > * + * {
   margin-block-start: var(--space-m);
 }
 
+/**********************************************************
+* Landing
+**********************************************************/
+
 #landing-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -259,7 +262,7 @@ main > * + * {
   /* fallback for image-set incompatible browsers*/
   background-image: url("assets/images/hands.jpg");
 
-  /* fallback for image-set incompatible browsers*/
+  /* fallback for no-prefix image-set incompatible browsers*/
   background-image: -webkit-image-set(
     url("assets/images/hands.avif"),
     url("assets/images/hands.jpg"));
@@ -274,7 +277,7 @@ main > * + * {
 
 #landing-image .backdrop {
   color: var(--font-color-light);
-  background-color: #546e6fb5;
+  background-color: var(--black-transparent, #546e6fb5);
 
   position: absolute;
   top: 0;
@@ -285,5 +288,6 @@ main > * + * {
 
 #landing-image .backdrop > * {
   height: 100%;
+  font-size: var(--step-1);
   text-align: center;
 }
