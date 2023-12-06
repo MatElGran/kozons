@@ -1,6 +1,6 @@
 ---
-layout: base
-title: Entreprises
+layout: page
+title: Coaching entreprises
 ---
 
 # Coaching Entreprises

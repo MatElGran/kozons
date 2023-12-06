@@ -1,6 +1,6 @@
 ---
-layout: base
-title: Particuliers
+layout: page
+title: Coaching particuliers
 ---
 
 # Coaching Particuliers
