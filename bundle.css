@@ -234,9 +234,15 @@ h1 {
 
 main {
   flex-grow: 1;
-  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   max-width: 80ch;
   padding: var(--main-padding);
+  margin: 0 auto;
 }
 
 main > * + * {
