@@ -126,6 +126,7 @@ textarea:not([rows]) {
 
 
   --white: #fcfcf8;
+  --white-transparent: #fcfcf8b5;
 
   --green-light: #c1decc;
   --green-dark: #546e6f;
@@ -139,6 +140,7 @@ textarea:not([rows]) {
 
   --header-bg: var(--green-dark);
   --font-color-light: var(--white);
+  --font-color-light-transparent: var(--white-transparent);
 
   --font-family-headings: serif;
   --font-family-body: sans-serif;
@@ -226,6 +228,8 @@ h1 {
 #main-footer {
   display: flex;
   justify-content: center;
+  font-size: var(--step--1);
+  color: var(--font-color-light-transparent);
 }
 
 main {
