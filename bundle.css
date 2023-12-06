@@ -142,8 +142,8 @@ textarea:not([rows]) {
   --font-color-light: var(--white);
   --font-color-light-transparent: var(--white-transparent);
 
-  --font-family-headings: serif;
-  --font-family-body: sans-serif;
+  --font-family-headings: "Montaga", serif;
+  --font-family-body:  "Jost", sans-serif;
 
   --main-padding: var(--space-m);
 }
