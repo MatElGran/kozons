@@ -3,9 +3,7 @@ layout: base
 image: traces.jpg
 ---
 
-# kozons
+# Sculptons votre avenir.
 
-Sculptons votre avenir.
-
-<!-- Tout doute, tout problème, tout défi représente une occasion de grandir: une expérience de vie bienvenue,
-des émotions à accueillir, et à retranscrire en possible par le passage à l'action. -->
+Les doutes, les problèmes, les défis sont autant d'occasions de grandir: une expérience de vie bienvenue,
+des émotions à accueillir, à transformer en possible par le passage à l'action.
