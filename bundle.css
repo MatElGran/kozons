@@ -1,7 +1,7 @@
-/**
+/**********************************************************
 * Reset
 * @see https://andy-bell.co.uk/a-more-modern-css-reset/
-*/
+**********************************************************/
 
 /* Box sizing rules */
 *,
@@ -76,9 +76,9 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/**
+/**********************************************************
 * Layouts
-*/
+**********************************************************/
 .switcher {
   --switcher-threshold: 20rem;
   display: flex;
@@ -91,11 +91,9 @@ textarea:not([rows]) {
   flex-basis: calc((var(--switcher-threshold) - 100%) * 999);
 }
 
-/**
-* Website
-*/
-
-
+/**********************************************************
+* Vars
+**********************************************************/
 :root {
   /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,2520,24,1.25,5,1,1280&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --step--1: clamp(0.9375rem, 0.8993rem + 0.1909vw, 1.2rem);
@@ -148,6 +146,9 @@ textarea:not([rows]) {
   --main-padding: var(--space-m);
 }
 
+/**********************************************************
+* Styles
+**********************************************************/
 body {
   display: flex;
   flex-direction: column;
